@@ -85,7 +85,7 @@ def question2():
     answer = {}
 
     # Answers are floats
-    answer["(a) entropy_entire_data"] = 1
+    answer["(a) entropy_entire_data"] = 1.0
     # Infogain
     answer["(b) x <= 0.2"] = 0.46438561897747244
     answer["(b) x <= 0.7"] = 0.3602012209808308
