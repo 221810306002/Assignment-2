@@ -24,39 +24,39 @@ def question1():
     level2_right = {}
 
     level1["smoking"] = 1.0
-    level1["smoking_info_gain"] = 0.2780719051126377
+    level1["smoking_info_gain"] = 0.2780
 
-    level1["cough"] = -1.0
-    level1["cough_info_gain"] = -1.0
+    level1["cough"] = - 1.0
+    level1["cough_info_gain"] = 0.2364
 
-    level1["radon"] = -1.0
-    level1["radon_info_gain"] = -1.0
+    level1["radon"] = - 1.0
+    level1["radon_info_gain"] = 0.0348
 
-    level1["weight_loss"] = -1.0
-    level1["weight_loss_info_gain"] = -1.0
+    level1["weight_loss"] = - 1.0
+    level1["weight_loss_info_gain"] = 0.0290
 
-    level2_left["smoking"] = -1.0
-    level2_left["smoking_info_gain"] = -1.0
-    level2_right["smoking"] = -1.0
-    level2_right["smoking_info_gain"] = -1.0
+    level2_left["smoking"] = - 1.0
+    level2_left["smoking_info_gain"] = 0.0
+    level2_right["smoking"] = - 1.0
+    level2_right["smoking_info_gain"] = 0.0
 
-    level2_left["radon"] = -1.0
-    level2_left["radon_info_gain"] = 0.0
+    level2_left["radon"] = - 1.0
+    level2_left["radon_info_gain"] = 0.07290
 
-    level2_left["cough"] = 0.8812908992306927
-    level2_left["cough_info_gain"] = 0.7219280948873623
+    level2_left["cough"] = 1.0
+    level2_left["cough_info_gain"] = 0.72192
 
-    level2_left["weight_loss"] = -1.0
-    level2_left["weight_loss_info_gain"] = -1.0
+    level2_left["weight_loss"] = - 1.0
+    level2_left["weight_loss_info_gain"] = 0.1709
 
-    level2_right["radon"] = 0.7219280948873623
-    level2_right["radon_info_gain"] = 0.7219280948873623
+    level2_right["radon"] = 1.0
+    level2_right["radon_info_gain"] = 0.7219
 
-    level2_right["cough"] = -1.0
-    level2_right["cough_info_gain"] = -1.0
+    level2_right["cough"] = - 1.0
+    level2_right["cough_info_gain"] = 0.32192
 
-    level2_right["weight_loss"] = -1.0
-    level2_right["weight_loss_info_gain"] = -1.0
+    level2_right["weight_loss"] = - 1.0
+    level2_right["weight_loss_info_gain"] = 0.17095
 
     answer["level1"] = level1
     answer["level2_left"] = level2_left
@@ -65,17 +65,15 @@ def question1():
     # Fill up `construct_tree``
     # tree, training_error = construct_tree()
     tree = u.BinaryTree("smoking")  # MUST STILL CREATE THE TREE *****
-    A = tree.insert_left("Chronic Cough")
-    B = tree.insert_right("Radon")
+    A = tree.insert_left("cough")
+    B = tree.insert_right("radon")
     A.insert_left("Yes")
     A.insert_right("No")
     B.insert_left("Yes")
     B.insert_right("No")
-    tree.print_tree()
-   
     answer["tree"] = tree  # use the Tree structure
     # answer["training_error"] = training_error
-    answer["training_error"] = 0.0
+    answer["training_error"] = 0.0  
 
     return answer
 # ----------------------------------------------------------------------
