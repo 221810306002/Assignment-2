@@ -182,10 +182,10 @@ def question4():
     answer["i: explain"] = "These are categories with an inherent order from least to most light passing ability."
 
     answer["j"] = ['discrete', 'qualitative', 'ordinal']
-    answer["j: explain"] = ""Military ranks have a hierarchical order.""
+    answer["j: explain"] = "Military ranks have a hierarchical order."
 
     answer["k"] = ['continuous', 'quantitative', 'ratio']
-    answer["k: explain"] = "it sometimes might be discrete when the measurement is like number of buildings away and it might be interval too"
+    answer["k: explain"] = "it sometimes might be discrete when the measurement is like number of buildings away and it might be interval too."
 
     answer["l"] = ['continuous', 'quantitative', 'ratio']
     answer["l: explain"] = "Density can vary infinitely and has a meaningful zero point."
@@ -205,11 +205,11 @@ def question5():
     # Read appropriate section of book chapter 3
 
     # string: one of 'Model 1' or 'Model 2'
-    explain["a"] = "Model-2"
+    explain["a"] = "Model 2"
     explain["a explain"] = "Model-2 is better because it's like a trimmed version that is less likely to remember too much from the training data. This makes it perform well on new data that it hasn't seen before."
 
     # string: one of 'Model 1' or 'Model 2'
-    explain["b"] = "Model-1"
+    explain["b"] = "Model 1"
     explain["b explain"] = "While Model 1 did well on the combined dataset (A + B), Model 2 is a better choice for classification tasks because it's better at handling new situations. This is crucial in real-world applications, as Model 2 is less likely to get too specialized on the training data and can perform well in unfamiliar scenarios."
 
     explain["c similarity"] = "Regularization"
