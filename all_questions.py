@@ -75,7 +75,7 @@ def question1():
    
     answer["tree"] = tree  # use the Tree structure
     # answer["training_error"] = training_error
-    answer["training_error"] = 0.0  
+    answer["training_error"] = 0.0
 
     return answer
 # ----------------------------------------------------------------------
