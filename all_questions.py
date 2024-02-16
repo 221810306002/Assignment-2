@@ -160,14 +160,14 @@ def question4():
     answer["b"] = ['continuous', 'quantitative', 'ratio']
     answer["b: explain"] = "Brightness can vary infinitely and has a meaningful zero point."
 
-    answer["c"] = ['continuous', 'qualitative', 'ordinal']
-    answer["c: explain"] = "This can also be interval in quantitative classification"
+    answer["c"] = ['discrete', 'qualitative', 'ordinal']
+    answer["c: explain"] = "People's judgments of brightness can be seen as a continuous, qualitative attribute with an ordinal nature, reflecting subjective perceptions arranged by intensity."
 
     answer["d"] = ['continuous', 'quantitative', 'ratio']
     answer["d: explain"] = "Angles can take any value within the specified range and have a meaningful zero point."
 
-    answer["e"] = ['discrete', 'qualitative', 'nominal']
-    answer["e: explain"] = "Bronze, Silver, Gold are categories with no inherent order."
+    answer["e"] = ['discrete', 'qualitative', 'ordinal']
+    answer["e: explain"] = "The Olympic medals, categorized as Bronze, Silver, and Gold, are discrete qualitative attributes arranged in order based on rank."
 
     answer["f"] = ['continuous', 'quantitative', 'ratio']
     answer["f: explain"] = "Height can vary infinitely and has a meaningful zero point."
@@ -187,8 +187,8 @@ def question4():
     answer["k"] = ['continuous', 'quantitative', 'ratio']
     answer["k: explain"] = "it sometimes might be discrete when the measurement is like number of buildings away and it might be interval too."
 
-    answer["l"] = ['continuous', 'quantitative', 'ratio']
-    answer["l: explain"] = "Density can vary infinitely and has a meaningful zero point."
+    answer["l"] = ['discrete', 'quantitative', 'ratio']
+    answer["l: explain"] = "The substance's density, measured in grams per cubic centimeter, is a continuous quantitative attribute, assessable on a ratio scale."
 
     answer["m"] = ['discrete', 'qualitative', 'nominal']
     answer["m: explain"] = "The Check numbers are unique identifiers for coats with no inherent order."
@@ -215,7 +215,7 @@ def question5():
     explain["c similarity"] = "Regularization"
     explain["c similarity explain"] = "To help pick the right model and avoid memorizing too much, both of them try to include how complex the model is in the loss function."
 
-    explain["c difference"] = "Criterion"
+    explain["c difference"] = "Model Optimization Criterion"
     explain["c difference explain"] = "They differ in how they measure model complexity, especially when dealing with decision trees."
 
     return explain
